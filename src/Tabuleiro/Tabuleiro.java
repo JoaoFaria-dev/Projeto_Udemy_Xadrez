@@ -27,4 +27,13 @@ public class Tabuleiro {
     public void setLinhasTabuleiro(int linhasTabuleiro) {
         this.linhasTabuleiro = linhasTabuleiro;
     }
+
+    public Peca pecasTabuleiros(int linhasTabuleiro, int colunaTabuleiro) {
+        return pecasTabuleiro[linhasTabuleiro][colunaTabuleiro];
+    }
+
+
+    public Peca pecasTabuleiros(Posicao posicaoTabuleiro) {
+        return pecasTabuleiro[posicaoTabuleiro.getLinha()][posicaoTabuleiro.getColuna()];
+    }
 }
