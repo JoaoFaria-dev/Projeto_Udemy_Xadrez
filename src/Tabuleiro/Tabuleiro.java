@@ -36,4 +36,9 @@ public class Tabuleiro {
     public Peca pecasTabuleiros(Posicao posicaoTabuleiro) {
         return pecasTabuleiro[posicaoTabuleiro.getLinha()][posicaoTabuleiro.getColuna()];
     }
+
+    public void localPeca (Peca peca, Posicao posicao){
+        pecasTabuleiro[posicao.getLinha()][posicao.getColuna()] = peca;
+        peca.posicao = posicao;
+    }
 }
